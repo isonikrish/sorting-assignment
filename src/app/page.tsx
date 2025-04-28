@@ -23,7 +23,7 @@ export default function Home() {
   const [sortedClients, setSortedClients] = useState(clients);
 
   const handleApplySort = () => {
-    let sorted = [...clients];
+    const sorted = [...clients];
 
     sorted.sort((a, b) => {
       if (sort.createdAt) {
